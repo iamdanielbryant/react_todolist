@@ -1,0 +1,16 @@
+.inputField {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 4px solid lightgrey; /* Simplified border property */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    outline: none;
+}
+.inputField:focus{
+    border: 4px solid #000;
+    border-color: #fff1d9;
+    outline: none;
+}

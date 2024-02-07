@@ -1,0 +1,21 @@
+*{
+    font-family: Arial;
+    color: #4a4a4a;
+}
+body{
+    background-color: #dcdcdc;
+}
+.title{
+    text-align: center;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item{
+    flex: 1 0 auto;
+    width: 100%;
+}
