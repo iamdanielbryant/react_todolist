@@ -8,7 +8,12 @@ class TodoList extends React.Component {
             <div className="flex-item">
                 <ul className="list">
                     { this.props.todoItems.map((item,index) => (
-                        <Todo item={item} index={index} key={index} modifyTodoItem={this.props.modifyTodoItem} deleteTodoItem={this.props.deleteTodoItem}/>
+                        <Todo 
+                            item={item} 
+                            index={index} 
+                            key={index} 
+                            modifyTodoItem={this.props.modifyTodoItem} 
+                            deleteTodoItem={this.props.deleteTodoItem}/>
                     ))}
                 </ul>
             </div>
@@ -33,9 +38,12 @@ class Todo extends React.Component {
 
     render(){
         return(
-            <li className={`todo_item ${this.props.item.completed ? "todo_completed" : "" }`} key={this.props.item.id} onClick={this.handleClick} >
-                <span className="label">{this.props.item.text}</span>
-                <span className="del" onClick={this.deleteItem}>❌</span>
+            <li 
+                className={`todo_item ${this.props.item.completed ? "todo_completed" : "" }`} 
+                key={this.props.item.id} 
+                onClick={this.handleClick}>
+                    <span className="label">{this.props.item.text}</span>
+                    <span className="del" onClick={this.deleteItem}>❌</span>
             </li>
         );
     }

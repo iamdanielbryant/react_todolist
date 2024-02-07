@@ -71,7 +71,10 @@ class App extends React.Component {
         <div className="container">
           <h1 className="title">Today's Tasks</h1>
           <NewTodo addNewTodo={this.addNewTodo}  />
-          <TodoList todoItems={this.state.todos} modifyTodoItem={this.modifyTodoItem} deleteTodoItem={this.deleteTodoItem} />
+          <TodoList 
+            todoItems={this.state.todos} 
+            modifyTodoItem={this.modifyTodoItem} 
+            deleteTodoItem={this.deleteTodoItem} />
           <span className="title">Made in Seattle 📌</span>
         </div>
       </div>

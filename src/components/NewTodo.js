@@ -17,11 +17,18 @@ class NewTodo extends React.Component {
             this.setState({inputText: ""})
         }
     }
-    
+
     render(){
         return (
             <div className="flex-item">
-                <input type="text" className="inputField" placeholder="Type something..." value={this.state.inputText} onChange={(e) => {this.setState({inputText: e.target.value})}} onKeyDown={this.onKeyDownEvent} autoFocus />
+                <input 
+                    type="text" 
+                    className="inputField" 
+                    placeholder="Type something..." 
+                    value={this.state.inputText} 
+                    onChange={(e) => {this.setState({inputText: e.target.value})}} 
+                    onKeyDown={this.onKeyDownEvent} 
+                    autoFocus />
             </div>
         );
     }

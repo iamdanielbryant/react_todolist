@@ -40,11 +40,7 @@
 .label{
     flex: 90%;
 }
-.todo_item:hover > .del{
-    display: block;
-}
 .del{
-    display: none;
     flex: 10%;
     text-align: center;
 }
